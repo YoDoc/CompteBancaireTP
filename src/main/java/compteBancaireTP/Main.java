@@ -8,9 +8,18 @@ public class Main {
 		
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("libellé du portefeuille?");
-		int libelle = userInput.nextInt();
+		String libelle = userInput.next();
+		
+		
+		System.out.println("Nom de la Banque?");
+		String nomBanque = userInput.next();
+		
+		
 		System.out.println(libelle.toString());
-
+		System.out.println(nomBanque.toString());
+		
+		
+		userInput.close();
 	}
 
 }
